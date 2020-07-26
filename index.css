@@ -1,0 +1,98 @@
+html { 
+    background: url(assets/img_man.jpg) no-repeat center fixed; 
+    background-size: cover;
+    width: 900px;
+  }
+  body { 
+    color: rgb(0, 0, 0); 
+  }
+
+  @font-face {
+    font-family: myFirstFont;
+    src: url(fonts/sansation_light.woff);
+ }
+
+ * {
+    font-family: myFirstFont;
+ }
+
+
+/* ------------------for the transition and transform effects--------------- */
+
+ .btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  opacity: 0.4;
+  width: 500px;
+  height: 150px;
+  margin-left: 400px;
+  margin-top: 150px;
+  border-radius: 23px;
+  transition: color 0.3s, transform 1s, width 1s, height 1s, opacity 0.3s, font-size 0.3s, border-radius 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.btn:hover {
+  opacity: 1;
+  width: 550px;
+  height: 200px;
+  transform: rotate(360deg);
+  color: blueviolet;
+  border-radius: 15px;
+  font-size: 13px;
+
+}
+
+
+/* --------for the animation effects----------------- */
+
+.anim {
+  background: yellowgreen;
+  border: none;
+  margin-left: 405px;
+  margin-top: 150px;
+  position: relative;
+  border-radius: 23px;
+  text-align: center;
+  opacity: 0.4;
+  width: 550px;
+  height: 200px;
+  animation: testing 100s;
+}
+
+@keyframes testing{
+  0%   {background-color: purple; margin-top: -450px;}
+  15%   {background-color: red; margin-top: -250px;}
+  25%  {background-color: yellow; margin-top: -150px;}
+  35%   {background-color: aqua; margin-top: -100px;}
+  50%  {background-color: blue; margin-top: -90px;}
+  60%   {background-color: gold; margin-top: -70px;}
+  75%   {background-color: red; margin-top: -450px;}
+  100% {background-color: green; margin-top: 150px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
